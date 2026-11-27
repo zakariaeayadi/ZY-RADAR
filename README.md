@@ -1,64 +1,75 @@
-# ZY RADAR
+# 🚀 ZY RADAR – Système de détection et de visualisation radar
 
-### Système de détection ultrasonique avec visualisation radar en temps réel
+## 📌 Présentation du projet
 
-## Présentation du projet
+**ZY RADAR** est un mini-projet réalisé dans le cadre de notre formation en **Génie Informatique Embarquée**.
 
-ZY RADAR est un mini-projet réalisé dans le domaine des systèmes embarqués. Il consiste à concevoir un système de détection d'objets utilisant un capteur ultrasonique monté sur un servomoteur.
+Ce projet consiste à développer un système de détection d'objets utilisant un capteur ultrasonique monté sur un servomoteur. Le système effectue un balayage angulaire afin de détecter les objets présents dans son environnement et de transmettre les données à une interface graphique développée avec Processing.
 
-Le système effectue un balayage de son environnement dans une plage angulaire comprise entre **20° et 180°**. Les données collectées sont transmises à une interface graphique développée avec Processing afin de visualiser les objets détectés en temps réel.
+L'objectif est de reproduire le principe de fonctionnement d'un radar à travers une visualisation en temps réel.
 
-## Technologies et outils utilisés
+## 🎥 Démonstration vidéo
 
-- **Arduino** : programmation et traitement des données.
-- **Capteur ultrasonique** : mesure des distances.
-- **Servomoteur** : orientation du capteur.
-- **Arduino IDE** : développement et téléversement du programme.
-- **Processing** : création de l'interface graphique et visualisation radar.
+Découvrez le fonctionnement de notre projet à travers cette démonstration vidéo publiée sur LinkedIn :
 
-## Fonctionnalités principales
+▶️ **[Regarder la démonstration de ZY RADAR sur LinkedIn](https://lnkd.in/p/ekkRkYmg)**
+
+## ⚙️ Technologies et composants utilisés
+
+### Matériel
+- Arduino
+- Capteur ultrasonique
+- Servomoteur
+- Câblage électronique
+
+### Environnement logiciel
+- Arduino IDE
+- Processing
+- Langage C/C++ (Arduino)
+- Java (Processing)
+
+## 🔍 Fonctionnalités principales
 
 - Détection des objets à l'aide d'un capteur ultrasonique.
-- Balayage angulaire entre 20° et 180°.
-- Mesure de la distance entre le capteur et les objets.
-- Communication série entre Arduino et Processing.
-- Visualisation graphique des données en temps réel.
+- Balayage angulaire automatique grâce au servomoteur.
+- Rotation du servomoteur entre **20° et 180°**.
+- Mesure de la distance entre le capteur et les objets détectés.
+- Transmission des données entre Arduino et Processing via une communication série.
+- Visualisation graphique des mesures en temps réel sous forme de radar.
 
-## Architecture du système
+## 🧩 Architecture du système
 
-### 1. Partie matérielle et programmation Arduino
+Le projet repose sur deux parties complémentaires :
 
-- Contrôle du servomoteur.
-- Acquisition des mesures du capteur ultrasonique.
-- Transmission des données vers l'ordinateur via le port série.
+**1. Partie matérielle – Arduino**
 
-### 2. Partie logicielle avec Processing
+Arduino contrôle le servomoteur, récupère les mesures du capteur ultrasonique et transmet les informations relatives à l'angle et à la distance.
 
-- Réception des données transmises par Arduino.
-- Traitement des informations reçues.
-- Affichage des angles et des distances sur une interface radar.
+**2. Partie logicielle – Processing**
 
-## Principe de fonctionnement
+Processing reçoit les données transmises par Arduino et les utilise pour afficher une interface radar dynamique permettant de visualiser les objets détectés.
 
-1. Le servomoteur oriente le capteur ultrasonique entre 20° et 180°.
-2. Le capteur mesure la distance des objets présents dans son environnement.
-3. Arduino récupère les mesures et les transmet à Processing.
-4. Processing affiche les données sous forme de représentation radar.
+## 🔄 Principe de fonctionnement
 
-## Installation et utilisation
+1. Le servomoteur effectue un balayage angulaire entre 20° et 180°.
+2. Le capteur ultrasonique mesure la distance des objets détectés.
+3. Arduino traite les mesures et transmet les données via le port série.
+4. Processing récupère les données et actualise l'affichage radar en temps réel.
 
-1. Télécharger ou cloner ce dépôt GitHub.
-2. Ouvrir le programme Arduino avec Arduino IDE.
-3. Connecter les composants électroniques.
-4. Téléverser le programme sur la carte Arduino.
-5. Ouvrir le sketch Processing.
-6. Sélectionner le port série correspondant à la carte Arduino.
-7. Exécuter le programme Processing pour visualiser les résultats.
+## 🎯 Objectifs pédagogiques
 
-## Objectifs pédagogiques
+Ce projet nous a permis de mettre en pratique plusieurs notions fondamentales des systèmes embarqués :
 
-Ce projet a permis de mettre en pratique plusieurs compétences :
+- Programmation des microcontrôleurs avec Arduino.
+- Interaction avec des capteurs et des actionneurs.
+- Acquisition et traitement des données.
+- Communication série entre deux environnements logiciels.
+- Développement d'une interface graphique interactive.
+- Intégration entre matériel électronique et logiciel.
 
-- Programmation des systèmes embarqués.
-- Acquisition et traitement des données issues de capteurs.
-- Commande des
+## 👨‍💻 Auteurs
+
+- **Zakaria Ayadi**
+- **Yasser Ramdani**
+
+Projet académique réalisé dans le cadre de la formation en Génie Informatique Embarquée.
